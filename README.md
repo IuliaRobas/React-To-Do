@@ -4,4 +4,6 @@ To-do application allowing the user to add tasks to existing or new categories, 
 
 <b>Technologies used: React, React Hooks, Context, Firebase, SCSS</b>
 
+[Deployed on Netlify - Check it out](https://what-i-have-to-do.netlify.app/)
+
 ![](preview.gif)
