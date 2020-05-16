@@ -217,7 +217,13 @@ header {
   width: 100%;
 
   @include mq("900px") {
-    padding: 0 10px;
+    padding: 0 4px;
+    p {
+      font-size: 14px;
+    }
+    img {
+      width: 20px;
+    }
   }
 
   nav {
@@ -262,7 +268,10 @@ header {
 
         ul li {
           @include va;
-
+          @include mq("900px") {
+            width: 11px;
+            height: 11px;
+          }
           list-style-type: none;
           cursor: pointer;
           width: 30px;
@@ -279,6 +288,10 @@ header {
           &.settings__add {
             margin-right: 15px;
             font-size: 30px;
+
+            @include mq("900px") {
+              font-size: 20px;
+            }
 
             button {
               @include transparent-button();
@@ -322,7 +335,10 @@ header {
   background-color: #fafafa;
 
   @include mq("900px") {
-    display: none;
+    width: 133px;
+    * {
+      font-size: 12px;
+    }
   }
 
   li {
@@ -431,6 +447,9 @@ header {
     }
 
     h2 {
+      @include mq("900px") {
+        font-size: 12px;
+      }
       margin: 0;
       color: #333;
       font-size: 15px;
@@ -529,7 +548,7 @@ header {
   }
 
   @include mq("900px") {
-    margin-left: 0;
+    margin-left: 133px;
     width: auto;
   }
 
@@ -697,6 +716,9 @@ header {
 .add-category__plus {
   color: #d312a9;
   font-size: 18px;
+  @include mq("900px") {
+    font-size: 13px;
+  }
 }
 
 .add-task__text,
@@ -705,6 +727,10 @@ header {
   color: #545454;
   font-size: 14px;
   margin-left: 15px;
+
+  @include mq("900px") {
+    font-size: 12px;
+  }
 }
 
 /* Task Date
